@@ -1,0 +1,42 @@
+{
+	"geode": "4.6.3",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"version": "v1.0.0",
+	"id": "helloworld1246.insta-block",
+	"name": "Insta Block",
+	"developer": "helloworld1246",
+	"description": "Instantly blocks a chosen user when you die or pause a level.",
+	"settings": {
+		"trigger": {
+			"type": "string",
+			"name": "Block Trigger",
+			"description": "When should the user be blocked?",
+			"default": "On Death",
+			"one-of": ["On Death", "On Pause", "Both", "Off"]
+		},
+		"target-username": {
+			"type": "string",
+			"name": "Target Username",
+			"description": "Used for display/log messages only.",
+			"default": "krmal"
+		},
+		"target-account-id": {
+			"type": "int",
+			"name": "Target Account ID",
+			"description": "The account ID of the user to block. Look it up on GDBrowser.",
+			"default": 0,
+			"min": 0
+		},
+		"show-notification": {
+			"type": "bool",
+			"name": "Show Notification",
+			"description": "Show a small popup when the user gets blocked.",
+			"default": true
+		}
+	}
+}
